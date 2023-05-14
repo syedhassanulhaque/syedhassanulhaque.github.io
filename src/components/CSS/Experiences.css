@@ -1,0 +1,131 @@
+
+/* exp Section CSS */
+.maxwidth{
+    margin-bottom: 5vw;
+}
+.exp{
+    
+    padding-top: 10px;
+    width: 100vw;
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.534);
+}
+.exp h1{
+    position: relative;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 600;
+    padding-bottom: 5px;
+    color: white;
+}
+.exp h1::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 130px;
+    height: 2px;
+    background: #ca9720;
+    transform: translateX(-50%);
+    
+
+}
+.exp h1::after{
+    content: "what i do";
+    font-size: 15px;
+    color: #ca9720;
+    position: absolute;
+    bottom: -7px;
+    left: 50%;
+    background: rgba(0, 0, 0, 0.555);
+    transform: translateX(-50%);
+ 
+}
+
+.exp-content{
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+    border-bottom: 7px groove #ca9720;
+    padding-bottom: 20px;
+}
+.exp-content-even{
+    display: flex;
+    flex-direction: row-reverse;
+    border-bottom: 7px groove #ca9720;
+    padding-bottom: 20px;
+
+}
+.exp-content .exp-column1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.exp-content .exp-column1 img{
+    display: block;
+    width: 400px;
+    height: 400px;
+    border: 13px groove #ca9720;
+    /* clip-path: polygon(25% 0%, 100% 1%, 100% 100%, 25% 100%, 0% 50%); */
+}
+.exp-content .exp-column2{
+    padding: 20px;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.exp-content .exp-column2 .head{
+    font-size: 35px;
+    font-weight: 900;
+    width: 100%;
+    padding-bottom: 10px;
+    color: #ca9720;
+}
+
+.exp-content .exp-column2 .text{
+    font-size: 28px;
+    font-weight: 700;
+    width: 100%;
+    padding-bottom: 10px;
+    color: white;
+}
+
+.exp-content .exp-column2 .info{
+    font-size: 23px;
+    color: white;
+}
+ .genbtn{
+    align-self: flex-start;
+    margin-top: 10px;
+    font-size: 25px;
+
+}
+.genbtn a{
+    box-shadow: 0px 0px 46px #ca9720;
+}
+
+@media (max-width:800px){
+    .exp-content{
+        flex-direction: column-reverse;
+    }
+   
+    .exp-content .exp-column1 img{
+        margin-top: 20px;
+        display: block;
+        width: 80vw;
+        height: 80vw;
+        clip-path:none;
+        /* border-radius: 50px; */
+        box-shadow: 4px 14px 10px #ca9720;
+
+    }
+
+
+}

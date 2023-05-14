@@ -1,0 +1,80 @@
+.home .text1{
+    font-family: 'Baloo Thambi 2', cursive;
+}
+.home .text2{
+    font-family: 'Zilla Slab', serif;
+}
+.home .text3{
+    font-family: 'Baloo Thambi 2', cursive;
+}
+.home .genbtn{
+    font-family: 'Baloo Thambi 2', cursive;
+}
+
+/* Home section CSS */
+section.hm{
+    display: block;
+    /* width: 100vw; */
+    height: 100vh;
+}
+.home{
+position: absolute;
+top: 0%;
+display: flex;
+width: 100vw;
+height: 100vh;
+justify-content: center;
+align-items: center;
+color: white;
+background-color: rgba(0, 0, 0, 0.493);
+}
+
+.home .maxwidth{
+margin: auto 0 auto 40px;
+
+}
+.home .maxwidth .homecontent{
+z-index: 1;
+}
+.home .maxwidth .homecontent .text1{
+font-size: 27px;
+}
+.home .maxwidth .homecontent .text2{
+font-size: 75px;
+font-weight: 700;
+text-shadow: 5px 5px 10px #ca9720;
+
+}
+.home .maxwidth .homecontent .text3{
+font-size: 40px;
+}
+.home .maxwidth .homecontent .text3 span{
+color: #ca9720;
+padding-bottom: 20px;
+}
+.home .maxwidth .homecontent .genbtn{
+margin-top: 10px;
+
+
+}
+
+/* Utiliy Classes */
+.genbtn a{
+    display: block;
+    width: fit-content;
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    padding: 12px 36px;
+    background-color: #ca9720;
+    border: 2px solid #ca9720;
+    transition: all 0.3s linear;
+
+}
+  .genbtn a:hover{
+    color: #ca9720;
+    background-color: transparent;
+    border: 2px solid #ca9720;
+    cursor: pointer;
+
+}
