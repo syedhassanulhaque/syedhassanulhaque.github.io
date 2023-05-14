@@ -15,7 +15,7 @@ import Contact from './components/JS/Contact';
 function App() {
   return (
     <div>
-      <Router>
+      <BrowserRouter>
       <Navbar/>
       <Routes>
         <Route exact path="/" element={ <Home/>}></Route>
@@ -24,7 +24,7 @@ function App() {
         <Route exact path="/skills" element={ <Skills/>}></Route>
         <Route exact path="/contact" element={ <Contact/>}></Route>
       </Routes>
-      </Router>
+      </BrowserRouter>
      
     </div>
   );
