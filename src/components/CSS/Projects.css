@@ -1,0 +1,76 @@
+
+/* About Section CSS */
+.projects{
+    padding-top: 5vw;
+    width: 100vw;
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.534);
+}
+
+.projects section{
+    margin: auto;
+    
+}
+.projects h1{
+    position: relative;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 600;
+    padding-bottom: 5px;
+    color: white;
+}
+
+.project-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    scale: 0.9;
+}
+
+.card {
+    background-color: rgb(31 26 35 / 84%);
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(3, 6, 15, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card h3 {
+    margin: 1rem 0 0.5rem;
+    color: #00ff22;
+}
+
+.card p {
+    padding: 0 1rem;
+    color: white;
+}
+
+.card a {
+    display: inline-block;
+    margin: 1.3rem 0;
+    padding: 0.5rem 1.5rem;
+    color: white;
+    background: linear-gradient(to right, #414728, #d52424);
+    text-decoration: none;
+    border-radius: 4px;
+    transition: all 1s ;
+}
+
+.card a:hover {
+    background:linear-gradient(to right,  #d52424, #414728);
+
+}
