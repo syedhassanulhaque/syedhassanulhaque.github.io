@@ -1,26 +1,24 @@
 import React from 'react'
 import '../CSS/Skills.css'
-import {Link} from 'react-router-dom'
-import image from '../logo.jpeg'
 
-import php from '../Logos/php.png'
-import java from '../Logos/java.png'
-import c from '../Logos/c.png'
-import cpp from '../Logos/cpp.png'
-import javascript from '../Logos/javascript.png'
-import mysql from '../Logos/mysql.png'
-import mongodb from '../Logos/mongodb.png'
-import vscode from '../Logos/vscode.png'
-import linux from '../Logos/linux.png'
-import react from '../Logos/react.png'
-import nodejs from '../Logos/nodejs.png'
-import wordpress from '../Logos/wordpress.png'
-import android from '../Logos/android.png'
-import html5 from '../Logos/html5.png'
-import jquery from '../Logos/jquery.png'
-import css3 from '../Logos/css3.png'
-import bootstrap from '../Logos/bootstrap.png'
-
+// Use CDN icons to avoid missing local assets
+const java = 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg'
+const cpp = 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg'
+const c = 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg'
+const react = 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg'
+const nodejs = 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg'
+const mongodb = 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg'
+const php = 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg'
+const wordpress = 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-plain.svg'
+const mysql = 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg'
+const jquery = 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg'
+const html5 = 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg'
+const css3 = 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg'
+const bootstrap = 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg'
+const android = 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg'
+const vscode = 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg'
+const linux = 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg'
+const javascript = 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg'
 
 const Skills=()=>{
     return (
@@ -29,7 +27,7 @@ const Skills=()=>{
         <div className="maxwidth">
         <div className="row">
                     <div className="card">
-                        <div class="content">
+                        <div className="content">
                             <div class="front">
                             <img src={java} alt="" />
                             <div className="name">

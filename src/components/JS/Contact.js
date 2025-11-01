@@ -5,6 +5,22 @@ import {Link} from 'react-router-dom'
 
 
 const Contact=()=>{
+    const handleEmail = (e) => {
+        e.preventDefault();
+        const nameEl = document.getElementById('contact-name');
+        const emailEl = document.getElementById('contact-email');
+        const subjectEl = document.getElementById('contact-subject');
+        const messageEl = document.getElementById('contact-message');
+        const name = (nameEl && nameEl.value) || '';
+        const fromEmail = (emailEl && emailEl.value) || '';
+        const subject = (subjectEl && subjectEl.value) || 'New message from portfolio website';
+        const message = (messageEl && messageEl.value) || '';
+
+        const body = `Name: ${name}\nEmail: ${fromEmail}\n\n${message}`;
+        const mailto = `mailto:syedhassanulhaque@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        window.location.href = mailto;
+    };
+
     return(
         <section className="contact" id="contact">
     <div className="max-width">
@@ -56,7 +72,7 @@ const Contact=()=>{
                             <textarea id="contact-message" name="message" cols="30" rows="10" placeholder="Describe Your Project ..." aria-label="Your message"></textarea>
                         </div>
                         <div className="field genbtn">
-                            <button type="submit">Message me</button>
+                            <button type="button" onClick={handleEmail} aria-label="Send email">Send message</button>
                         </div>
                     </form>
 

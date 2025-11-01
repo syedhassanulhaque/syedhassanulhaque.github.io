@@ -50,11 +50,6 @@ const Navbar = () => {
             </NavLink>
           </li>
           <li>
-            <NavLink to="/skills" onClick={closeMenu} className={({ isActive }) => (isActive ? 'active' : undefined)}>
-              Skills
-            </NavLink>
-          </li>
-          <li>
             <NavLink to="/contact" onClick={closeMenu} className={({ isActive }) => (isActive ? 'active' : undefined)}>
               Contact
             </NavLink>
