@@ -1,13 +1,12 @@
 ::placeholder{
-    color: #ca9720ce;
+    color: color-mix(in srgb, var(--accent) 85%, transparent);
 }
 /* Contact Section Css Start  */
 .contact{
-    
     padding-top: 10px;
     width: 100vw;
     min-height: 100vh;
-    background-color: rgba(0, 0, 0, 0.534);
+    background-color: var(--surface-35);
 }
 .contact h1{
     position: relative;
@@ -16,7 +15,7 @@
     font-size: 50px;
     font-weight: 600;
     padding-bottom: 5px;
-    color: white;
+    color: var(--text);
 }
 .contact h1::before{
     content: "";
@@ -25,24 +24,18 @@
     left: 50%;
     width: 130px;
     height: 2px;
-    background: #ca9720;
+    background: var(--accent);
     transform: translateX(-50%);
-    
-
-}
-.contact h1::after{
-    content: "who i am";
-    font-size: 15px;
-    color: #ca9720;
-    position: absolute;
-    bottom: -7px;
-    left: 50%;
-    background: rgba(0, 0, 0, 0.555);
-    transform: translateX(-50%);
- 
 }
 .contact h1::after{
     content: "get in touch";
+    font-size: 15px;
+    color: var(--accent);
+    position: absolute;
+    bottom: -7px;
+    left: 50%;
+    background: var(--surface-50);
+    transform: translateX(-50%);
 }
 .contact-content{
     margin-top: 40px;
@@ -57,7 +50,7 @@
     margin-left:20px;
     padding: 15px;
     padding-left: 5%;
-    color: white;
+    color: var(--text);
 }
 .contact-content .left .text{
     font-weight: 600;
@@ -78,7 +71,7 @@
 }
 .contact-content .left .icons .rows i{
     font-size: 30px;
-    color: #ca9720;
+    color: var(--accent);
 }
 .contact-content .left .icons .rows .info{
     margin-left: 20px;
@@ -89,7 +82,7 @@
 
 }
 .contact-content .left .icons .rows .info .sub-title{
-    color: #ca9720;
+    color: var(--accent);
     font-weight: 800;
     font-family: cursive;
 }
@@ -104,9 +97,8 @@
 }
 .contact-content .right form{
     padding: 3vw;
-    background: radial-gradient(rgba(0, 0, 0, 0.63),rgba(36, 20, 20, 0.377),rgba(22, 22, 17, 0.384),rgba(0, 0, 0, 0.479),rgba(35, 73, 25, 0.274),#ca972017,#8b6d2631);
+    background: radial-gradient(var(--surface-50), var(--surface-35), color-mix(in srgb, var(--accent) 10%, transparent));
     border-radius: 4vw;
-    border: 2px groove #ca9720;
 }
 .contact-content .right form .fields{
     display: flex;
@@ -129,7 +121,7 @@
     width: 100%;
     padding: 0 15px;
     border: none;
-    border-bottom: 2px solid #ca9720;
+    border-bottom: 2px solid var(--accent);
     background: transparent;
     color: #ca9720;
     outline: none;
@@ -159,7 +151,7 @@
     resize: none;
     outline: none;
     border: none;
-    border-bottom: 2px solid #ca9720;  
+    border-bottom: 2px solid var(--accent);
     border-radius: 3vw;
       padding: 20px ;
 }

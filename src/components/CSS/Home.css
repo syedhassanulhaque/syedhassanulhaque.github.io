@@ -25,8 +25,8 @@ width: 100vw;
 height: 100vh;
 justify-content: center;
 align-items: center;
-color: white;
-
+color: var(--text);
+background-color: var(--surface-35);
 }
 
 .home .maxwidth{
@@ -42,14 +42,14 @@ font-size: 27px;
 .home .maxwidth .homecontent .text2{
 font-size: 75px;
 font-weight: 700;
-text-shadow: 5px 5px 10px #ca9720;
+text-shadow: 5px 5px 10px var(--accent);
 
 }
 .home .maxwidth .homecontent .text3{
 font-size: 40px;
 }
 .home .maxwidth .homecontent .text3 span{
-color: #ca9720;
+color: var(--accent);
 padding-bottom: 20px;
 }
 .home .maxwidth .homecontent .genbtn{
@@ -62,19 +62,21 @@ margin-top: 10px;
 .genbtn a{
     display: block;
     width: fit-content;
-    color: white;
+    color: var(--accent-contrast);
     text-decoration: none;
     font-size: 25px;
     padding: 12px 36px;
-    background-color: #ca9720;
-    border: 2px solid #ca9720;
+    background-color: var(--accent);
+    border: 2px solid var(--accent);
+    box-shadow: 0 0 46px var(--accent);
     transition: all 0.3s linear;
 
 }
   .genbtn a:hover{
-    color: #ca9720;
+    color: var(--accent);
     background-color: transparent;
-    border: 2px solid #ca9720;
+    border: 2px solid var(--accent);
+    box-shadow: 0 0 30px var(--accent);
     cursor: pointer;
 
 }
