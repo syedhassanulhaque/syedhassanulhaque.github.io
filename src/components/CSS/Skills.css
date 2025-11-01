@@ -70,7 +70,7 @@
   box-shadow: 0 0 15px rgba(0,0,0,0.1);
   transition: transform 1s;
   transform-style: preserve-3d;
-  background: url('../Logos/card_bg.jpg');
+  background: radial-gradient(ellipse at top left, rgba(202,151,32,0.15), rgba(0,0,0,0.6));
   background-size: cover;
 }
 

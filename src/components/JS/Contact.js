@@ -43,20 +43,20 @@ const Contact=()=>{
                     <form action="#" method="post">
                         <div className="fields">
                             <div className="field name">
-                                <input type="text" placeholder="Name" />
+                                <input id="contact-name" name="name" type="text" placeholder="Name" aria-label="Your name" />
                             </div>
                             <div className="field email">
-                                <input type="email" placeholder="Email " />
+                                <input id="contact-email" name="email" type="email" placeholder="Email" aria-label="Your email" />
                             </div>
                         </div>
                         <div className="field subject">
-                            <input type="text" placeholder="Subject" />
+                            <input id="contact-subject" name="subject" type="text" placeholder="Subject" aria-label="Subject" />
                         </div>
                         <div className="field textarea">
-                            <textarea  cols="30" rows="10" placeholder="Describe Your Project ..."></textarea>
+                            <textarea id="contact-message" name="message" cols="30" rows="10" placeholder="Describe Your Project ..." aria-label="Your message"></textarea>
                         </div>
                         <div className="field genbtn">
-                            <a href="#home">Message me</a>
+                            <button type="submit">Message me</button>
                         </div>
                     </form>
 

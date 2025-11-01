@@ -9,7 +9,6 @@ import {
   Route,
 } from "react-router-dom";
 import Experiences from './components/JS/Experiences';
-import Skills from './components/JS/Skills';
 import Contact from './components/JS/Contact';
 
 function App() {
@@ -21,7 +20,6 @@ function App() {
         <Route exact path="/" element={ <Home/>}></Route>
         <Route exact path="/about" element={ <About/>}></Route>
         <Route exact path="/experiences" element={ <Experiences/>}></Route>
-        <Route exact path="/skills" element={ <Skills/>}></Route>
         <Route exact path="/contact" element={ <Contact/>}></Route>
       </Routes>
       </Router>

@@ -28,7 +28,7 @@ const Skills=()=>{
             <h1>My Skills</h1>
         <div className="maxwidth">
         <div className="row">
-                    <div class="card">
+                    <div className="card">
                         <div class="content">
                             <div class="front">
                             <img src={java} alt="" />
@@ -271,7 +271,7 @@ const Skills=()=>{
                             <div class="front">
                             <img src={vscode} alt="" />
                             <div className="name">
-                                VS COde
+                                VS Code
                             </div>
                             </div>
                             <div class="back">

@@ -1,11 +1,10 @@
 
 /* About Section CSS */
 .about{
-    
     padding-top: 10px;
     width: 100vw;
     min-height: 100vh;
-    background-color: rgba(0, 0, 0, 0.534);
+    background-color: var(--surface-35);
 }
 .about h1{
     position: relative;
@@ -14,7 +13,7 @@
     font-size: 50px;
     font-weight: 600;
     padding-bottom: 5px;
-    color: white;
+    color: var(--text);
 }
 .about h1::before{
     content: "";
@@ -23,21 +22,18 @@
     left: 50%;
     width: 130px;
     height: 2px;
-    background: #ca9720;
+    background: var(--accent);
     transform: translateX(-50%);
-    
-
 }
 .about h1::after{
     content: "who i am";
     font-size: 15px;
-    color: #ca9720;
+    color: var(--accent);
     position: absolute;
     bottom: -7px;
     left: 50%;
-    background: rgba(0, 0, 0, 0.555);
+    background: var(--surface-50);
     transform: translateX(-50%);
- 
 }
 
 .about-content{
@@ -76,7 +72,7 @@
     color: white;
 }
 .about-content .about-column2 .text span{
-    color: #ca9720;
+    color: var(--accent);
     font-weight: 700;
 }
 .about-content .about-column2 .info{
@@ -90,7 +86,7 @@
 
 }
 .genbtn a{
-    box-shadow: 0px 0px 46px #ca9720;
+    box-shadow: 0px 0px 46px var(--accent);
 }
 
 @media (max-width:800px){
@@ -105,7 +101,7 @@
         height: 80vw;
         clip-path:none;
         border-radius: 50px;
-        box-shadow: 4px 14px 25px #ca9720;
+        box-shadow: 4px 14px 25px var(--accent);
 
     }
 
